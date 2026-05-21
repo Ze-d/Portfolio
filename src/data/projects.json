@@ -1,3 +1,44 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "id": "agent-runtime",
+      "name": "Agent Runtime",
+      "summary": "LLM Agent runtime with tool calling, checkpoint, and risk control",
+      "description": "## Overview\n\nA complete **LLM Agent runtime** framework.\n\n### Features\n- Tool calling via MCP protocol\n- Session checkpoint/restore\n- Risk classification and approval flow",
+      "techStack": ["Python", "FastAPI", "Redis", "MCP"],
+      "images": [],
+      "links": { "github": "https://github.com/example/agent-runtime", "demo": null },
+      "featured": true
+    },
+    {
+      "id": "microservice-platform",
+      "name": "Microservice Platform",
+      "summary": "Spring Cloud microservice platform with service discovery and distributed tracing",
+      "description": "## Overview\n\nProduction-grade microservice platform built on Spring Cloud.",
+      "techStack": ["Java", "Spring Cloud", "Docker", "Kubernetes"],
+      "images": [],
+      "links": { "github": "https://github.com/example/ms-platform", "demo": null },
+      "featured": true
+    },
+    {
+      "id": "knowledge-base",
+      "name": "AI Knowledge Base",
+      "summary": "Personal knowledge base system using RAG and LLM-based content processing",
+      "description": "## Overview\n\nAn AI-powered knowledge management system.",
+      "techStack": ["Python", "LangChain", "ChromaDB", "FastAPI"],
+      "images": [],
+      "links": { "github": "https://github.com/example/knowledge-base", "demo": "https://kb-demo.example.com" },
+      "featured": false
+    },
+    {
+      "id": "api-gateway",
+      "name": "API Gateway",
+      "summary": "High-performance API gateway with rate limiting, auth, and routing",
+      "description": "## Overview\n\nCustom API gateway handling 10k+ requests/second with dynamic routing.",
+      "techStack": ["Go", "Redis", "gRPC", "Docker"],
+      "images": [],
+      "links": { "github": "https://github.com/example/api-gateway", "demo": null },
+      "featured": false
+    }
+  ]
 }
