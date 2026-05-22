@@ -1,11 +1,11 @@
 <template>
   <section class="hero">
-    <div class="hero-avatar"></div>
-    <h1 class="hero-name">Your Name</h1>
-    <p class="hero-tagline">Java Developer & AI Engineer</p>
+    <img class="hero-avatar" src="../assets/images/avatar.png" alt="Avatar" />
+    <h1 class="hero-name">JinYuan Zhang</h1>
+    <p class="hero-tagline">AI Engineer & Java Developer</p>
     <div class="hero-links">
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="hero-link">GitHub</a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" class="hero-link">LinkedIn</a>
+      <a href="https://github.com/Ze-d" target="_blank" rel="noopener" class="hero-link">GitHub</a>
+      <!-- <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" class="hero-link">LinkedIn</a> -->
     </div>
   </section>
 </template>
@@ -23,8 +23,10 @@
   width: 96px;
   height: 96px;
   border-radius: 50%;
+  object-fit: cover;
   background: #21262d;
   margin: 0 auto 20px;
+  display: block;
 }
 
 .hero-name {

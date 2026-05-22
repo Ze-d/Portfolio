@@ -2,7 +2,8 @@
   <nav class="navbar">
     <router-link to="/" class="navbar-brand">Portfolio</router-link>
     <div class="navbar-links">
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/Ze-d" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://ze-d.github.io/" target="_blank" rel="noopener">Blog</a>
     </div>
   </nav>
 </template>
@@ -26,7 +27,10 @@
   backdrop-filter: blur(12px);
   border-bottom: 1px solid #21262d;
 }
-
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
 .navbar-brand {
   font-size: 1.1rem;
   font-weight: 700;

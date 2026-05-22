@@ -7,7 +7,7 @@
       "description": "## Overview\n\nA complete **LLM Agent runtime** framework.\n\n### Features\n- Tool calling via MCP protocol\n- Session checkpoint/restore\n- Risk classification and approval flow",
       "techStack": ["Python", "FastAPI", "Redis", "MCP"],
       "images": [],
-      "links": { "github": "https://github.com/example/agent-runtime", "demo": null },
+      "links": { "github": "https://github.com/Ze-d/LightAgent", "demo": null },
       "featured": true
     },
     {
