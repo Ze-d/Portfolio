@@ -11,6 +11,6 @@ describe('NavBar', () => {
   it('renders nav links', () => {
     const wrapper = mount(NavBar)
     const links = wrapper.findAll('a')
-    expect(links.length).toBeGreaterThanOrEqual(2)
+    expect(links.length).toBe(3)
   })
 })
