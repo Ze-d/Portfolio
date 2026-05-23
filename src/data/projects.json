@@ -61,25 +61,24 @@
       "description": "面向电网场景下的电算网协同调度仿真需求，基于 C++ 和 NS-3 构建了一套配置驱动的协同调度仿真平台。平台支持网络拓扑自动构建、任务流模拟、链路状态监控、调度过程记录与结果输出等能力，通过配置文件将节点、链路和任务参数解耦，实现不同规模、不同场景下网络拓扑的快速生成与复现实验，降低复杂仿真环境的搭建成本。同时，平台具备链路状态、调度过程和关键运行指标的实时采集与日志分析能力，能够辅助定位链路拥塞、资源分配异常等问题。在调度策略方面，项目将电价、处理时延、拥塞惩罚、任务紧急度等因素抽象为可配置的多目标调度模型，支持负载均衡、时延优先、电价优先等策略切换与参数扫描，从而提升电算网协同调度策略在多场景下的验证、对比和优化效率。",
       "techStack": [
         "C++",
-        "python",
-        "python",
-        "ns3"
+        "Python",
+        "NS-3"
       ],
       "images": [
         {
-          "src": "src\\assets\\images\\dsw_topo.png",
+          "src": "images/dsw_topo.png",
           "alt": "拓扑图"
         },
         {
-          "src": "src\\assets\\images\\dsw_task_distribution.png",
+          "src": "images/dsw_task_distribution.png",
           "alt": "任务分布图"
         },
         {
-          "src": "src\\assets\\images\\dsw_link_utils.png",
+          "src": "images/dsw_link_utils.png",
           "alt": "链路利用热力图"
         },
         {
-          "src": "src\\assets\\images\\dsw_task_status.png",
+          "src": "images/dsw_task_status.png",
           "alt": "任务状态图"
         }
       ],
