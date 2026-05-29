@@ -37,20 +37,29 @@
       "featured": true
     },
     {
-      "id": "knowledge-base",
-      "name": "AI Knowledge Base",
-      "summary": "Personal knowledge base system using RAG and LLM-based content processing",
-      "description": "## Overview\n\nAn AI-powered knowledge management system.",
+      "id": "agent-pulse",
+      "name": "Agent Pulse",
+      "summary": "Real-time monitoring  for LLM agents",
+      "description": "## Overview\n\nA real-time monitoring system for tracking and analyzing LLM agent performance.",
       "techStack": [
+        "rust",
         "Python",
-        "LangChain",
-        "ChromaDB",
-        "FastAPI"
+        "nodejs",
+        "vue3"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "images/agentpulse-1.png",
+          "alt": "Agent Pulse Dashboard"
+        },
+        {
+          "src": "images/agentpulse-2.png",
+          "alt": "Agent Pulse Dashboard"
+        }
+      ],
       "links": {
-        "github": "https://github.com/example/knowledge-base",
-        "demo": "https://kb-demo.example.com"
+        "github": "https://github.com/Ze-d/AgentPulse",
+        "demo": "https://github.com/Ze-d/AgentPulse"
       },
       "featured": false
     },
