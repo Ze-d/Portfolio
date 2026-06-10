@@ -64,6 +64,42 @@
       "featured": false
     },
     {
+      "id": "prompt-launcher",
+      "name": "Prompt Launcher",
+      "summary": "Windows 优先的本地 Prompt 快速搜索与复制桌面工具，基于 Tauri v2 + React + Rust + SQLite 构建",
+      "description": "Prompt Launcher 是一款轻量级本地桌面效率工具，专为频繁使用 AI 对话工具（如 ChatGPT、Claude、Cursor 等）的用户设计。用户可将常用的 prompt 模板保存至本地 SQLite 数据库，通过全局快捷键一键唤起搜索窗口，输入关键词即时检索，回车后将 prompt 内容自动复制到系统剪贴板，即可粘贴使用。\n\n核心功能包括：Prompt 的增删改查与分组管理、标签分类、收藏标记、最近使用排序、全局快捷键唤起、系统托盘常驻、JSON 导入导出、快捷键录音绑定、主题切换（深色/浅色模式）。项目采用前后端分离架构：前端使用 React + TypeScript + Vite + Tailwind CSS + Zustand 状态管理；后端使用 Rust + Tauri v2 提供系统级能力（全局快捷键、剪贴板、系统托盘、窗口管理），业务逻辑集中于 Rust services 层，数据库使用 SQLite 本地持久化，支持幂等 migration。\n\n项目遵循严格的编码规范：Tauri invoke 统一封装在 frontend services 层，Rust command 仅做参数接收与响应返回，平台相关逻辑集中在 platform_service，数据结构变更需同步更新前端类型、Rust 模型和数据库 migration。MVP 已全部完成，支持 Windows 平台，架构预留 macOS / Linux 兼容空间。",
+      "techStack": [
+        "Tauri v2",
+        "React",
+        "TypeScript",
+        "Rust",
+        "Vite",
+        "Tailwind CSS",
+        "Zustand",
+        "SQLite",
+        "Vitest"
+      ],
+      "images": [
+                {
+          "src": "images/prompt_1.png",
+          "alt": "Prompt Launcher 主界面"
+        },
+        {
+          "src": "images/prompt_3.png",
+          "alt": "Prompt Launcher 搜索界面"
+        },
+        {
+          "src": "images/prompt_2.png",
+          "alt": "Prompt Launcher 系统托盘菜单"
+        }
+      ],
+      "links": {
+        "github": "https://github.com/Ze-d/PromptLauncher",
+        "demo": null
+      },
+      "featured": false
+    },
+    {
       "id": "dsw-simulator-platform",
       "name": "DSW Simulator Platform",
       "summary": "基于ns3构建的电算网仿真平台，支持根据电价，时延等指标对算力调度算法进行仿真测试",
