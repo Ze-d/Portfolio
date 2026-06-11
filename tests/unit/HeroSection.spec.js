@@ -6,7 +6,7 @@ describe('HeroSection', () => {
   it('renders name and tagline', () => {
     const wrapper = mount(HeroSection)
     expect(wrapper.text()).toContain('JinYuan Zhang')
-    expect(wrapper.text()).toContain('AI Engineer')
+    expect(wrapper.text()).toContain('AI Native Engineer &Developer')
   })
 
   it('renders social links', () => {
