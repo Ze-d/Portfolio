@@ -34,23 +34,27 @@ defineProps({
 <style scoped>
 .card {
   display: block;
-  background: #161b22;
-  border: 1px solid #21262d;
-  border-radius: 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
-  transition: border-color 0.2s;
+  transition: border-color var(--duration-normal) var(--ease-out-expo),
+              transform var(--duration-normal) var(--ease-out-expo),
+              box-shadow var(--duration-normal) var(--ease-out-expo);
 }
 
 .card:hover {
-  border-color: #30363d;
+  border-color: var(--border-default);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card-image {
   position: relative;
   width: 100%;
   height: 180px;
-  background: #0d1117;
+  background: var(--bg-deep);
   overflow: hidden;
 }
 
@@ -58,47 +62,54 @@ defineProps({
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out-expo);
+}
+
+.card:hover .card-image img {
+  transform: scale(1.03);
 }
 
 .card-image-placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #161b22 0%, #1a2332 100%);
+  background: linear-gradient(135deg, #0f0f0f 0%, #141414 100%);
 }
 
 .featured-badge {
   position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 2px 10px;
-  font-size: 0.7rem;
+  top: 10px;
+  right: 10px;
+  padding: 3px 10px;
+  font-size: 0.625rem;
   font-weight: 600;
-  color: #0d1117;
-  background: #58a6ff;
+  color: var(--bg-deep);
+  background: var(--accent);
   border-radius: 9999px;
+  letter-spacing: 0.01em;
 }
 
 .card-body {
-  padding: 16px;
+  padding: 18px;
 }
 
 .card-title {
-  font-size: 1.05rem;
+  font-size: var(--text-lg);
   font-weight: 600;
-  color: #c9d1d9;
+  color: var(--text-primary);
   margin: 0 0 6px;
+  letter-spacing: -0.01em;
 }
 
 .card-summary {
-  font-size: 0.85rem;
-  color: #8b949e;
-  margin: 0 0 12px;
-  line-height: 1.5;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin: 0 0 14px;
+  line-height: 1.55;
 }
 
 .card-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 5px;
 }
 </style>
