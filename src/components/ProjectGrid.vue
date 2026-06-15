@@ -40,16 +40,29 @@ const featuredProjects = getFeaturedProjects()
 }
 
 .section {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .section-title {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #c9d1d9;
-  margin: 0 0 16px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #21262d;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-subtle);
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 32px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 1px;
 }
 
 .grid {
