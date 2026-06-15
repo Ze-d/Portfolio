@@ -1,24 +1,113 @@
-html {
-  scroll-behavior: smooth;
+/* ============================================
+   Portfolio Design System — CSS Custom Properties
+   Style: Ultra-dark + Warm Gold
+   ============================================ */
+
+:root {
+  /* ---- Background ---- */
+  --bg-deep: #050505;
+  --bg-surface: #0a0a0a;
+  --bg-raised: #111111;
+
+  /* ---- Text ---- */
+  --text-primary: #f0f0f0;
+  --text-secondary: #888888;
+  --text-tertiary: #666666;
+
+  /* ---- Border ---- */
+  --border-subtle: rgba(255, 255, 255, 0.04);
+  --border-default: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.10);
+
+  /* ---- Accent: Warm Gold ---- */
+  --accent: #d4a574;
+  --accent-strong: rgba(212, 167, 116, 0.25);
+  --accent-subtle: rgba(212, 167, 116, 0.10);
+  --accent-muted: rgba(212, 167, 116, 0.08);
+
+  /* ---- Typography ---- */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* ---- Type Scale ---- */
+  --text-3xl: 2rem;      /* 32px — Hero name */
+  --text-2xl: 1.625rem;  /* 26px — Section title */
+  --text-xl: 1.25rem;    /* 20px — Featured section */
+  --text-lg: 1rem;       /* 16px — Project title */
+  --text-base: 0.875rem; /* 14px — Body */
+  --text-sm: 0.75rem;    /* 12px — Summary */
+  --text-xs: 0.6875rem;  /* 11px — Tags, labels */
+
+  /* ---- Spacing ---- */
+  --space-unit: 4px;
+
+  /* ---- Motion ---- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --duration-entrance: 400ms;
 }
 
+/* ---- Reset & Base ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  line-height: 1.65;
+  font-size: var(--text-base);
+}
+
+/* ---- Links ---- */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-out-expo);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Selection ---- */
+::selection {
+  background: var(--accent-subtle);
+  color: var(--text-primary);
+}
+
+/* ---- Scrollbar ---- */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0d1117;
+  background: var(--bg-deep);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #30363d;
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #484f58;
+  background: rgba(255, 255, 255, 0.14);
 }
 
-::selection {
-  background: rgba(88, 166, 255, 0.3);
+/* ---- Focus ---- */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
