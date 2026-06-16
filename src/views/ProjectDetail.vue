@@ -52,14 +52,17 @@ const renderedDescription = computed(() => {
 
 .back-link {
   display: inline-block;
-  color: #58a6ff;
+  color: var(--accent);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: var(--text-sm);
+  font-weight: 500;
   margin-bottom: 24px;
+  transition: opacity var(--duration-fast) var(--ease-out-expo);
 }
 
 .back-link:hover {
-  text-decoration: underline;
+  opacity: 0.8;
+  text-decoration: none;
 }
 
 .detail-layout {
@@ -78,10 +81,11 @@ const renderedDescription = computed(() => {
 }
 
 .detail-name {
-  font-size: 1.75rem;
+  font-size: 1.375rem;
   font-weight: 700;
-  color: #c9d1d9;
+  color: var(--text-primary);
   margin: 0 0 12px;
+  letter-spacing: -0.02em;
 }
 
 .detail-tags {
@@ -92,15 +96,24 @@ const renderedDescription = computed(() => {
 }
 
 .detail-description {
-  color: #c9d1d9;
-  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-size: var(--text-base);
   line-height: 1.7;
 }
 
 .detail-description :deep(h2) {
-  font-size: 1.1rem;
-  margin: 20px 0 8px;
-  color: #c9d1d9;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin: 24px 0 10px;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.detail-description :deep(h3) {
+  font-size: var(--text-base);
+  font-weight: 600;
+  margin: 18px 0 8px;
+  color: var(--text-primary);
 }
 
 .detail-description :deep(ul) {
@@ -109,34 +122,64 @@ const renderedDescription = computed(() => {
 
 .detail-description :deep(li) {
   margin-bottom: 4px;
-  color: #8b949e;
+  color: var(--text-secondary);
+}
+
+.detail-description :deep(li::marker) {
+  color: var(--text-tertiary);
 }
 
 .detail-description :deep(strong) {
-  color: #c9d1d9;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.detail-description :deep(code) {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  padding: 2px 6px;
+  background: var(--bg-raised);
+  border-radius: 3px;
+  color: var(--accent);
 }
 
 .detail-links {
   display: flex;
-  gap: 12px;
-  margin-top: 24px;
+  gap: 10px;
+  margin-top: 28px;
 }
 
 .detail-link {
   display: inline-block;
-  padding: 8px 20px;
-  font-size: 0.9rem;
-  color: #c9d1d9;
-  background: #21262d;
-  border: 1px solid #30363d;
+  padding: 8px 18px;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-default);
   border-radius: 6px;
   text-decoration: none;
-  transition: border-color 0.15s, color 0.15s;
+  letter-spacing: -0.01em;
+  transition: border-color var(--duration-fast) var(--ease-out-expo),
+              color var(--duration-fast) var(--ease-out-expo),
+              background var(--duration-fast) var(--ease-out-expo);
+}
+
+.detail-link:first-child {
+  color: var(--accent);
+  background: var(--accent-muted);
+  border-color: rgba(212, 167, 116, 0.12);
+}
+
+.detail-link:first-child:hover {
+  border-color: var(--accent-strong);
+  background: var(--accent-subtle);
 }
 
 .detail-link:hover {
-  border-color: #58a6ff;
-  color: #58a6ff;
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+  text-decoration: none;
 }
 
 .not-found {
@@ -145,13 +188,14 @@ const renderedDescription = computed(() => {
 }
 
 .not-found h2 {
-  font-size: 1.5rem;
-  color: #c9d1d9;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--text-primary);
   margin-bottom: 16px;
 }
 
 .not-found a {
-  color: #58a6ff;
+  color: var(--accent);
   text-decoration: none;
 }
 
