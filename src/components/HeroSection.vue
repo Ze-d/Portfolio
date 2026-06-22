@@ -98,7 +98,7 @@
 .hero-link--primary {
   color: var(--accent);
   background: var(--accent-muted);
-  border-color: rgba(212, 167, 116, 0.12);
+  border-color: var(--accent-border);
 }
 
 .hero-link--primary:hover {

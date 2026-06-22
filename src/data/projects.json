@@ -49,6 +49,10 @@
       ],
       "images": [
         {
+          "src": "images/agentpulse-display.png",
+          "alt": "Display picture of Agent Pulse"
+        },
+        {
           "src": "images/agentpulse-1.png",
           "alt": "Agent Pulse Dashboard"
         },
@@ -80,6 +84,10 @@
         "Vitest"
       ],
       "images": [
+        {
+          "src": "images/prompt_display.png",
+          "alt": "Prompt-display"
+        },
                 {
           "src": "images/prompt_1.png",
           "alt": "Prompt Launcher 主界面"
@@ -110,6 +118,11 @@
         "NS-3"
       ],
       "images": [
+        {
+          "src": "images/dsw_display.png",
+          "alt": "dispaly"
+
+        },
         {
           "src": "images/dsw_topo.png",
           "alt": "拓扑图"

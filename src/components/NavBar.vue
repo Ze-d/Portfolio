@@ -38,7 +38,7 @@ onUnmounted(() => {
   justify-content: space-between;
   padding: 0 24px;
   height: 52px;
-  background: rgba(5, 5, 5, 0.96);
+  background: rgba(17, 24, 68, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-subtle);

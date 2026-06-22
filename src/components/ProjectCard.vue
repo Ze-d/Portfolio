@@ -72,7 +72,7 @@ defineProps({
 .card-image-placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #0f0f0f 0%, #141414 100%);
+  background: linear-gradient(135deg, #111844 0%, #161e52 100%);
 }
 
 .featured-badge {
