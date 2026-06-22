@@ -1,37 +1,49 @@
 {
   "projects": [
     {
-      "id": "agent-runtime",
-      "name": "Agent Runtime",
-      "summary": "LLM Agent runtime with tool calling, checkpoint, and risk control",
-      "description": "## Overview\n\nA complete **LLM Agent runtime** framework.\n\n### Features\n- Tool calling via MCP protocol\n- Session checkpoint/restore\n- Risk classification and approval flow",
+      "id": "zcli",
+      "name": "ZCLI 终端个人编程 Agent",
+      "summary": "基于 Python 构建的终端编程 Agent，支持持久化记忆、上下文压缩、任务规划、MCP 扩展及多 Agent 协作。",
+      "description": "ZCLI 是一个参考 Claude Code 核心架构设计并独立实现的轻量级终端编程 Agent。项目围绕 Agent Tool Loop 构建，支持多轮对话、文件读写、Shell 命令执行、权限校验和工具结果持久化；实现长期记忆与多会话管理，可自动提取用户偏好，并在恢复会话时修复异常中断造成的工具调用协议错误。为解决长对话上下文膨胀问题，设计了大结果落盘、历史裁剪、旧工具结果压缩和 LLM 摘要相结合的分层压缩机制。项目还集成 TodoWrite、持久化 Task Graph、生命周期 Hooks、按需 Skill 加载，以及兼容 stdio 和 Streamable HTTP 的 MCP 客户端。多 Agent 部分支持一次性 Subagent、后台 Teammate、文件邮箱通信、受控任务自动认领和 Git Worktree 隔离执行。系统兼容 Anthropic、DeepSeek、MiniMax、GLM、Kimi 等 Anthropic 协议模型，并实现 429/529 指数退避、备用模型切换、输出扩容续写和超长 Prompt 恢复等容错机制。项目建立了单元测试、端到端 Prompt 测试和 GitHub Actions 持续集成流程。",
       "techStack": [
-        "Python",
-        "FastAPI",
-        "Redis",
-        "MCP"
+        "Python 3.11+",
+        "Anthropic SDK",
+        "MCP",
+        "Git Worktree"
       ],
-      "images": [],
+      "images": [        {
+          "src": "images/zcli_display.png",
+          "alt": "Display picture of ZCLI"
+        }
+      ],
       "links": {
-        "github": "https://github.com/Ze-d/LightAgent",
+        "github": "https://github.com/Ze-d/ZCLI",
         "demo": null
       },
       "featured": true
     },
     {
-      "id": "microservice-platform",
-      "name": "Microservice Platform",
-      "summary": "Spring Cloud microservice platform with service discovery and distributed tracing",
-      "description": "## Overview\n\nProduction-grade microservice platform built on Spring Cloud.",
+      "id": "scholar-forge",
+      "name": "ScholarForge",
+      "summary": "基于 LangGraph 构建的可配置开源深度研究 Agent，支持多模型、多搜索工具、MCP 与 Zotero 本地知识库。",
+      "description": "ScholarForge 是一个面向复杂研究任务的开源深度研究 Agent。项目采用 LangGraph StateGraph 和 Supervisor-Worker 多智能体架构，将用户需求自动转换为结构化研究任务，由 Supervisor 负责规划研究策略、拆分子任务并并行调度多个 Researcher。每个 Researcher 通过 ReAct 循环调用网络搜索及 MCP 工具，持续收集、分析和压缩研究资料，最终汇总生成完整研究报告。项目统一接入 OpenAI、Anthropic、Google、DeepSeek、Groq 等模型提供商，并支持 Tavily、DuckDuckGo、Exa及模型原生搜索能力。通过 MCP 集成 Zotero RAG，在研究开始前检索用户本地文献库，将相关论文注入研究上下文，实现本地学术资料与网络信息的交叉验证。针对长上下文研究任务，项目实现了 Token 超限检测、历史消息裁剪和研究结果渐进式截断等恢复策略。同时使用 Pydantic 和 TypedDict 管理配置及多层工作流状态，并结合 pytest、Ruff、mypy、LangSmith 和 Deep Research Bench 建立代码质量检查、链路追踪及 LLM-as-Judge 效果评估体系。",
       "techStack": [
-        "Java",
-        "Spring Cloud",
-        "Docker",
-        "Kubernetes"
+        "Python",
+        "LangGraph",
+        "LangChain",
+        "MCP",
+        "RAG",
+        "Zotero",
+        "OpenAI"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "images/scholar-forge-display.png",
+          "alt": "Display picture of ScholarForge"
+        }
+      ],
       "links": {
-        "github": "https://github.com/example/ms-platform",
+        "github": null,
         "demo": null
       },
       "featured": true
@@ -88,7 +100,7 @@
           "src": "images/prompt_display.png",
           "alt": "Prompt-display"
         },
-                {
+        {
           "src": "images/prompt_1.png",
           "alt": "Prompt Launcher 主界面"
         },
@@ -121,7 +133,6 @@
         {
           "src": "images/dsw_display.png",
           "alt": "dispaly"
-
         },
         {
           "src": "images/dsw_topo.png",
