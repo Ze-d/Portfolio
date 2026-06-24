@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": "zcli",
-      "name": "ZCLI 终端个人编程 Agent",
+      "name": "ZCLI Coding Agent",
       "summary": "基于 Python 构建的终端编程 Agent，支持持久化记忆、上下文压缩、任务规划、MCP 扩展及多 Agent 协作。",
       "description": "ZCLI 是一个参考 Claude Code 核心架构设计并独立实现的轻量级终端编程 Agent。项目围绕 Agent Tool Loop 构建，支持多轮对话、文件读写、Shell 命令执行、权限校验和工具结果持久化；实现长期记忆与多会话管理，可自动提取用户偏好，并在恢复会话时修复异常中断造成的工具调用协议错误。为解决长对话上下文膨胀问题，设计了大结果落盘、历史裁剪、旧工具结果压缩和 LLM 摘要相结合的分层压缩机制。项目还集成 TodoWrite、持久化 Task Graph、生命周期 Hooks、按需 Skill 加载，以及兼容 stdio 和 Streamable HTTP 的 MCP 客户端。多 Agent 部分支持一次性 Subagent、后台 Teammate、文件邮箱通信、受控任务自动认领和 Git Worktree 隔离执行。系统兼容 Anthropic、DeepSeek、MiniMax、GLM、Kimi 等 Anthropic 协议模型，并实现 429/529 指数退避、备用模型切换、输出扩容续写和超长 Prompt 恢复等容错机制。项目建立了单元测试、端到端 Prompt 测试和 GitHub Actions 持续集成流程。",
       "techStack": [
@@ -14,6 +14,10 @@
       "images": [        {
           "src": "images/zcli_display.png",
           "alt": "Display picture of ZCLI"
+        },
+        {
+          "src": "images/zcli_1.png",
+          "alt": "ZCLI 终端界面"
         }
       ],
       "links": {
