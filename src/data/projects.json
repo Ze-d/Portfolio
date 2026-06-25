@@ -18,6 +18,10 @@
         {
           "src": "images/zcli_1.png",
           "alt": "ZCLI 终端界面"
+        },
+        {
+          "src": "images/zcli_tomato.png",
+          "alt": "ZCLI 产品番茄钟"
         }
       ],
       "links": {

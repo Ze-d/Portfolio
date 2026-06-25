@@ -6,8 +6,8 @@
     <h1 class="hero-name">JinYuan Zhang</h1>
     <p class="hero-tagline">AI Native Engineer & Developer</p>
     <div class="hero-links">
-      <a href="https://github.com/Ze-d" target="_blank" rel="noopener" class="hero-link hero-link--primary">GitHub</a>
-      <!-- <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" class="hero-link">LinkedIn</a> -->
+      <a href="https://github.com/Ze-d" target="_blank" rel="noopener" class="hero-link">GitHub</a>
+      <a href="https://ze-d.github.io/" target="_blank" rel="noopener" class="hero-link">Blog</a> 
     </div>
   </section>
 </template>
